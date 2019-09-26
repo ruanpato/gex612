@@ -6,6 +6,7 @@ Implementar a função fatorial de N através de uma função recursiva. A funç
 
 ## Ferramentas utilizadas ##
 * [RARS](https://github.com/TheThirdOne/rars) - RISC-V Assembler and Runtime Simulator
+* [GNU-GCC](https://gcc.gnu.org/) - GNU gcc c compiler
 
 ### Autores ###
 
