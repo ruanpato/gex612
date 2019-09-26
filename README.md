@@ -2,11 +2,15 @@
 
 Repositório criado para armazenar meus exercícios e trabalho referentes ao componente curricular obrigatório Organização de computadores cursado no de Bacharel em Ciência da computação na Universidade Federal da Fronteira Sul, campus Chapecó/SC.
 
-## Trabalhos e exercícios ##
+## Trabalhos ##
 
-* [Exemplo](https://exemplo.com)
 
-### Built With ###
+## Exercícios ##
+
+* [Acesso a memória](https://github.com/ruanpato/gex612/tree/master/acesso_a_memoria)
+* [Fatorial Recursivo](https://github.com/ruanpato/gex612/tree/master/fatorial_recursivo)
+
+### Ferramentas utilizadas ###
 
 * [RARS](https://github.com/TheThirdOne/rars) - RISC-V Assembler and Runtime Simulator
 
