@@ -16,7 +16,7 @@ Este trabalho é um dos "grandes" trabalhos que compõem as Notas Parciais (NP) 
 [Ruan Pato](https://github.com/ruanpato) - Ruan Natan Guerra Pato
 
 ## 2. Datas ##
-**Data de entrega:** 30/10/2019 23:55 (UTC-3)
+**Data de entrega:** 30/10/2019 23:55 (UTC-3)  
 **Data de apresentação:** até as 08/11/2019
 
 ## 3. Instruções de entrega ##
