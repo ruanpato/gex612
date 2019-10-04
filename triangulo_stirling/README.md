@@ -17,7 +17,7 @@ Este trabalho é um dos "grandes" trabalhos que compõem as Notas Parciais (NP) 
 
 ## 2. Datas ##
 **Data de entrega:** 30/10/2019 23:55 (UTC-3)  
-**Data de apresentação:** até as 08/11/2019
+**Data de apresentação:** até 08/11/2019
 
 ## 3. Instruções de entrega ##
 Através de Projeto no Github (preencher dados no link acima). Convidar o professor para o projeto até o dia 10/10/2019.
