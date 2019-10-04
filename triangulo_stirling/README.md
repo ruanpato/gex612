@@ -22,8 +22,8 @@ Este trabalho é um dos "grandes" trabalhos que compõem as Notas Parciais (NP) 
 Através de Projeto no Github (preencher dados no link acima). Convidar o professor para o projeto até o dia 10/10/2019.
 
 ## 4. Critérios da nota ##
-1) Funcional com recursividade.
-    a) 32 bits: **40%**
+1) Funcional com recursividade.  
+    a) 32 bits: **40%**  
     b) 64 bits: **60%**
 2) Modularidade, clareza e identação do código: **10%**
 3) Comentários do código: **5%**
