@@ -6,7 +6,7 @@ Este trabalho é um dos "grandes" trabalhos que compõem as Notas Parciais (NP) 
 - [Programação assembly RISC-V: Triângulo de Stirling](#programa%c3%a7%c3%a3o-assembly-risc-v-tri%c3%a2ngulo-de-stirling)
 - [Sumário](#sum%c3%a1rio)
   - [1. Grupo: 2 Alunos (não pode repetir dupla anterior)](#1-grupo-2-alunos-n%c3%a3o-pode-repetir-dupla-anterior)
-  - [2. Data de entrega](#2-data-de-entrega)
+  - [2. Datas](#2-datas)
   - [3. Instruções de entrega](#3-instru%c3%a7%c3%b5es-de-entrega)
   - [4. Critérios da nota](#4-crit%c3%a9rios-da-nota)
   - [5. Descrição](#5-descri%c3%a7%c3%a3o)
@@ -15,8 +15,9 @@ Este trabalho é um dos "grandes" trabalhos que compõem as Notas Parciais (NP) 
 ## 1. Grupo: 2 Alunos (não pode repetir dupla anterior) ##
 [Ruan Pato](https://github.com/ruanpato) - Ruan Natan Guerra Pato
 
-## 2. Data de entrega ##
-30/10/2019 23:55 (UTC-3)
+## 2. Datas ##
+**Data de entrega:** 30/10/2019 23:55 (UTC-3)
+**Data de apresentação:** até as 08/11/2019
 
 ## 3. Instruções de entrega ##
 Através de Projeto no Github (preencher dados no link acima). Convidar o professor para o projeto até o dia 10/10/2019.
