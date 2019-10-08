@@ -3,7 +3,7 @@
 Repositório criado para armazenar meus exercícios e trabalho referentes ao componente curricular obrigatório Organização de computadores cursado no de Bacharel em Ciência da computação na Universidade Federal da Fronteira Sul, campus Chapecó/SC.
 
 ## Trabalhos ##
-
+* [Triangulo de stirling fatorial](https://github.com/ruanpato/gex612/tree/master/triangulo_stirling)
 
 ## Exercícios ##
 
