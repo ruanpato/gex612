@@ -13,8 +13,8 @@ Este trabalho é um dos "grandes" trabalhos que compõem as Notas Parciais (NP) 
   - [6. Ferramentas utilizadas](#6-ferramentas-utilizadas)
   - [7. Autores](#7-autores)
 ## 1. Grupo: 2 Alunos (não pode repetir dupla anterior) ##
-[Ruan Pato](https://github.com/ruanpato) - Ruan Natan Guerra Pato
-[Henrique Muniz](https://github.com/ikemuniz) - Desenvolvimento do trabalho
+[Ruan Natan Guerra Pato](https://github.com/ruanpato) - Desenvolvimento do trabalho.  
+[Henrique Muniz](https://github.com/ikemuniz) - Desenvolvimento do trabalho.
 ## 2. Datas ##
 **Data de entrega:** 30/10/2019 23:55 (UTC-3)  
 **Data de apresentação:** até 08/11/2019
