@@ -39,20 +39,21 @@ Através de Projeto no Github (preencher dados no link acima). Convidar o profes
 
 ## 5. Descrição ##
 
-Desenvolver uma função recursiva utilizando o Assembly da arquitetura RISC-V (extensões RV32I, RVM) que implementa o cálculo do triângulo de números de Stirling de segundo tipo (Triangle of Stirling numbers of the second kind). A implementação deve suportar valores sem sinal de 64 bits.
-    A função recebe dois valores, tal que:
-        ST_2(n, k) = k*ST_2(n-1, k)+ST_2(n-1, k-1); n > 1
-        ST_2(1, k) = 0; k > 1
-        ST_2(1, 1) = 1
-    Onde:   n >= 1
-            1 <= k <= n
-Além da função recursiva descrita acima, o programa deve solicitar ao usuário o valor de “k” e chamar a função ST_2(n, k) imprimindo no console todos os valores calculados entre “k” e 1.
+Desenvolver uma função recursiva utilizando o Assembly da arquitetura RISC-V (extensões RV32I, RVM) que implementa o cálculo do triângulo de números de Stirling de segundo tipo (Triangle of Stirling numbers of the second kind). A implementação deve suportar valores sem sinal de 64 bits.  
+    A função recebe dois valores, tal que:  
+        ST_2(n, k) = k*ST_2(n-1, k)+ST_2(n-1, k-1); n > 1  
+        ST_2(1, k) = 0; k > 1  
+        ST_2(1, 1) = 1  
+    Onde:   n >= 1  
+            1 <= k <= n  
+Além da função recursiva descrita acima, o programa deve solicitar ao usuário o valor de “k” e chamar a função ST_2(n, k) imprimindo no console todos os valores calculados entre “k” e 1.  
     A tabela abaixo ilustra os valores esperados para diferentes valores de n e k:
     ![Table](images/table.png)
 
 ## 6. Ferramentas utilizadas ##
 
--[RARS](https://github.com/TheThirdOne/rars) - RISC-V Assembler and Runtime Simulator
+- [RARS](https://github.com/TheThirdOne/rars) - RISC-V Assembler and Runtime Simulator
+- [GNU-GCC](https://gcc.gnu.org) - The Gnu GCC Compiler
 
 ## 7. Autores ##
 
