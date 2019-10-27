@@ -17,4 +17,5 @@ Repositório criado para armazenar meus exercícios e trabalho referentes ao com
 #### Autores ####
 
 * **Ruan Pato** - *Exercícios e trabalhos feitos* - [Ruan Pato](https://github.com/ruanpato)
+* **Rafa Arruda** - *Exercícios e trabalhos feitos* - [Rafinha Arruda](https://github.com/mazarafa)
 * **Me. Luciano Lores Caimi** - *Professor*
