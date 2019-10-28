@@ -17,7 +17,7 @@ Este trabalho é um dos "grandes" trabalhos que compõem as Notas Parciais (NP) 
 ## 1. Grupo: 2 Alunos (não pode repetir dupla anterior) ##
 
 - **[Ruan Natan Guerra Pato](https://github.com/ruanpato)** - Desenvolvimento do trabalho.  
-- **[Henrique Muniz](https://github.com/ikemuniz)** - Desenvolvimento do trabalho.
+- **[Rafa Arruda](https://github.com/mazarafa)** - Desenvolvimento do trabalho.
 
 ## 2. Datas ##
 
