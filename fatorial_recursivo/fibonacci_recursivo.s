@@ -1,8 +1,8 @@
 # Just to start #
 .data
-    str1: .string "Digite o número p/ fatorial: "
+    str1: .string "Digite o número p/ fibonacci: "
     str2: .string "O valor de "
-    str3: .string "! é "
+    str3: .string " fibonnaci é "
     str4: .string ".\n"
 .text
 # -------------------- Function main -------------------- #
@@ -17,9 +17,10 @@ main:
     li      a7, 5                                         # Enviroment Call to read integer
     ecall                                                 # Ecall
     add     s0, a0, zero                                  # Save the value Read in s0
-    jal     factorial                                     # Jump to Fibonacci and link at this point in ra
+    jal     fibonacci                                     # Jump to Fibonacci and link at this point in ra
+    j       exit                                          # Exit
 
-    # Printing Fatorial result:
+# Printing Fibonacci result:
     la      a0, str2                                      # a0 receive address of str2
     li      a7, 4                                         # Enviroment Call loaded in a7 to print string
     ecall                                                 # Ecall
@@ -37,34 +38,39 @@ main:
     li      a7, 4                                         # Enviroment Call loaded in a7 to print string
     ecall                                                 # Ecall
 
-    j       exit                                          # Finish the program execution
-
-
-# ----------------- Function factorial ------------------ #
+# ----------------- Function fibonacci ------------------ #
 #                     Arguments: a0                       #
-#           Registers in use: a0, s1, a1, sp, ra          #
+#           Registers in use:           #
 #                      Returns: a1                        #
 #                     Comments: N/A                       #
 #          Restrictions: Need be called using jal         #
-factorial:
-    addi     sp, sp, -8                                   # Increment Stack
-    sw       s1, 4(sp)                                    # Return value
-    sw       ra, 0(sp)                                    # Return address
-    bne      a0, zero, fact_else                          # Goes to "else" if a0 != 0
-    addi     a1, zero, 1                                  # Return value
-    j        fact_return                                  # Jumps to fact_return
+fibonacci:
+    # return ( fibonacci(n-1) + fibonnaci(n-2) )
+    slti    t0, a0, 2                                     # Verify if a0 < 2
+    beq     t0, zero, fib_recursion                       # Goes to fib_recursion if t0 == 0
+    add     a1, zero, a0                                  # Return a0 if a0 < 2
+    jr      ra                                            # Returns to register address value
+    fib_recursion:
+        addi    sp, sp, -12                               # Allocate three spaces in stack(4 for each)
+        sw      ra, 0(sp)                                 # Store register address
+        sw      a0, 4(sp)                                 # Store a0 value
+        # fibonnaci(n-2)
+        addi    a0, a0, -2                                # Second case of recursion
+        jal     fibonacci                                 # Call recursion
 
-    fact_else:
-        mv       s1, a0                                   # Copy a0 value to s1
-        addi     a0, a0, -1                               # n=n-1
-        jal factorial                                     # recursive call
-        mul      a1, s1, a1                               # a1 = n*n-1
+        lw      a0, 4(sp)                                 # Restore a0 value from stack
+        sw      a1, 8(sp)                                 # Save accumulate value of return
 
-    fact_return:
-        lw       s1, 4(sp)                                # Load aux register
-        lw       ra, 0(sp)                                # Return address
-        addi     sp, sp, 8                                # Decrement stack
-        jr       ra                                       # Return to register address position
+        # fibonnaci(n-1)
+        addi    a0, a0, -1                                # First case of recursion
+        jal     fibonacci                                 # Call recursion
+
+        lw      ra, 0(sp)                                 # get's Return value
+        lw      t0, 8(sp)                                 # 
+
+        addi    sp, sp, 12                                #
+        add     a1, a1, t0                                # Sum accumulates of recursion cases
+        jr      ra                                        # Return to ra
 
 # ------------------- Function exit --------------------- #
 #                    Arguments: N/A                       #
@@ -73,5 +79,3 @@ factorial:
 #                    Comments: N/A                        #
 #                  Restrictions: N/A                      #
 exit:
-    li      a7, 93                                        # Enviroment Call loaded in a7 to exit program
-    ecall                                                 # Ecall
