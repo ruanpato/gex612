@@ -96,3 +96,5 @@ fibonacci:
 #                    Comments: N/A                        #
 #                  Restrictions: N/A                      #
 exit:
+    li      a7, 93                                        # Enviroment Call loaded in a7 to exit program
+    ecall                                                 # Ecall
