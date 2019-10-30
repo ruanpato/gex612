@@ -57,14 +57,14 @@ main:
     j       exit                                          # Finish the program execution
 
 # ----------------- Function factorial ------------------ #
-#                     Arguments: a0                       #
+#                   Arguments: a0, s1                     #
 #           Registers in use: a0, s1, a1, sp, ra          #
 #                      Returns: a1                        #
 #                     Comments: N/A                       #
 #          Restrictions: Need be called using jal         #
 factorial:
     addi     sp, sp, -8                                   # Increment Stack
-    sw       s1, 4(sp)                                    # Return value
+    sw       s1, 4(sp)                                    # Return value (Accumulate)
     sw       ra, 0(sp)                                    # Return address
     bne      a0, zero, fact_else                          # Goes to "else" if a0 != 0
     addi     a1, zero, 1                                  # Return value
