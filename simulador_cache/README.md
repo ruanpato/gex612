@@ -26,9 +26,9 @@ Este trabalho é um dos "grandes" trabalhos que compõem as Notas Parciais (NP) 
 ## 3. Instruções de Entrega ##
 
 Convidar o professor para o projeto.
-Entregar via [moodle uffs](https://moodle-academico.uffs.edu.br) <sup>[1](#moodle-footnote)</sup>.
+Entregar via [moodle uffs](https://moodle-academico.uffs.edu.br) <sup>[*](#moodle-footnote)</sup>.
 
-<a name="moodle-footnote">1</a>: [moodle](https://moodle.org/) é um software livre, de apoio à aprendizagem, executado num ambiente virtual.
+<a name="moodle-footnote">*</a>: [moodle](https://moodle.org/) é um software livre, de apoio à aprendizagem, executado num ambiente virtual.
 
 ## 4. Instruções para implementação ##
 
@@ -83,7 +83,7 @@ Mapeamento Associativo por Conjuntos (4)
 
 ## 7. Professor ##
 
-- [Me. Luciano Lores Caimi](https://github.com/lcaimi) - *descrição do trabalho em [pdf](https://github.com/ruanpato/gex612/tree/master/simulador_cache/Trabalho_Mapeamento_MP-Cache.pdf)*
+- [Me. Luciano Lores Caimi](https://github.com/lcaimi) - *descrição do trabalho em [pdf](https://github.com/ruanpato/gex612/tree/master/simulador_cache/Trabalho_Mapeamento_MP-Cache.pdf).*
 
 ## 8. Informações ##
 
@@ -91,7 +91,7 @@ Este trabalho como na descrição acima não se fazia necessário uma implementa
 
 - **Mapeamento:**
   - Direto;
-  - Associativo por conjuntos.
+  - Associativo por conjuntos.  
 **Obs:** Associativo por conjuntos onde poderá se especificar o tamanho do conjunto.
 
 - **Políticas de substituição:**
