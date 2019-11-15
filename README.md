@@ -1,21 +1,23 @@
-# GEX612 Organização de Computadores
+# GEX612 Organização de Computadores #
 
 Repositório criado para armazenar meus exercícios e trabalho referentes ao componente curricular obrigatório Organização de computadores cursado no de Bacharel em Ciência da computação na Universidade Federal da Fronteira Sul, campus Chapecó/SC.
 
 ## Trabalhos ##
-* [Triangulo de stirling fatorial](https://github.com/ruanpato/gex612/tree/master/triangulo_stirling)
+
+- [Triangulo de stirling fatorial](https://github.com/ruanpato/gex612/tree/master/triangulo_stirling)
+- [Simulador Cache](https://github.com/ruanpato/gex612/tree/master/simulador_cache)
 
 ## Exercícios ##
 
-* [Acesso a memória](https://github.com/ruanpato/gex612/tree/master/acesso_a_memoria)
-* [Fatorial Recursivo](https://github.com/ruanpato/gex612/tree/master/fatorial_recursivo)
+- [Acesso a memória](https://github.com/ruanpato/gex612/tree/master/acesso_a_memoria)
+- [Fatorial Recursivo](https://github.com/ruanpato/gex612/tree/master/fatorial_recursivo)
 
-### Ferramentas utilizadas ###
+## Ferramentas utilizadas ##
 
-* [RARS](https://github.com/TheThirdOne/rars) - RISC-V Assembler and Runtime Simulator
+- [RARS](https://github.com/TheThirdOne/rars) - RISC-V Assembler and Runtime Simulator
 
-#### Autores ####
+## Autores ##
 
-* **Ruan Pato** - *Exercícios e trabalhos feitos* - [Ruan Pato](https://github.com/ruanpato)
-* **Rafa Arruda** - *Exercícios e trabalhos feitos* - [Rafinha Arruda](https://github.com/mazarafa)
-* **Me. Luciano Lores Caimi** - *Professor*
+- **[Ruan Pato](https://github.com/ruanpato)** - *Criador do repositório, descrições em README.md e resoução de exercícios e trabalhos*.
+- [Rafa Arruda](https://github.com/mazarafa) - *Exercícios e trabalhos feitos*
+- [Me. Luciano Lores Caimi](https://github.com/lcaimi) - *Professor*

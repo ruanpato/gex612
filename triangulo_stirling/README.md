@@ -57,4 +57,4 @@ Além da função recursiva descrita acima, o programa deve solicitar ao usuári
 
 ## 7. Autores ##
 
-- **[Me. Luciano Lores Caimi](https://github.com/lcaimi)** - *Professor, descrição do trabalho*
+- [Me. Luciano Lores Caimi](https://github.com/lcaimi) - *Professor, descrição do trabalho*

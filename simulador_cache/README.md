@@ -12,12 +12,12 @@ Este trabalho é um dos "grandes" trabalhos que compõem as Notas Parciais (NP) 
   - [4. Instruções para implementação](#4-instru%c3%a7%c3%b5es-para-implementa%c3%a7%c3%a3o)
   - [5. Políticas](#5-pol%c3%adticas)
   - [6. Ferramentas utilizadas](#6-ferramentas-utilizadas)
-  - [7. Autores](#7-autores)
+  - [7. Professor](#7-professor)
   - [8. Informações](#8-informa%c3%a7%c3%b5es)
 
 ## 1. Grupo ##
 
-- **[Ruan Natan Guerra Pato](https://github.com/ruanpato)** - Desenvolvimento do trabalho.  
+- **[Ruan Pato](https://github.com/ruanpato)** - Descrição em README.md e desenvolvimento do trabalho.  
 
 ## 2. Datas ##
 
@@ -25,7 +25,10 @@ Este trabalho é um dos "grandes" trabalhos que compõem as Notas Parciais (NP) 
 
 ## 3. Instruções de Entrega ##
 
-Através de Projeto no Github (preencher dados no link acima). Convidar o professor para o projeto até o dia 10/10/2019.
+Convidar o professor para o projeto.
+Entregar via [moodle uffs](https://moodle-academico.uffs.edu.br) <sup>[1](#moodle-footnote)</sup>.
+
+<a name="moodle-footnote">1</a>: [moodle](https://moodle.org/) é um software livre, de apoio à aprendizagem, executado num ambiente virtual.
 
 ## 4. Instruções para implementação ##
 
@@ -78,9 +81,9 @@ Mapeamento Associativo por Conjuntos (4)
 
 - [Python 3](https://www.python.org) - Python 3.6 intepreter.
 
-## 7. Autores ##
+## 7. Professor ##
 
-- **[Me. Luciano Lores Caimi](https://github.com/lcaimi)** - *Professor, descrição do trabalho*
+- [Me. Luciano Lores Caimi](https://github.com/lcaimi) - *descrição do trabalho em [pdf](https://github.com/ruanpato/gex612/tree/master/simulador_cache/Trabalho_Mapeamento_MP-Cache.pdf)*
 
 ## 8. Informações ##
 
@@ -89,7 +92,7 @@ Este trabalho como na descrição acima não se fazia necessário uma implementa
 - **Mapeamento:**
   - Direto;
   - Associativo por conjuntos.
-**Obs:** Associativo por conjuntos onde poderá-se especificar o tamanho do conjunto.
+**Obs:** Associativo por conjuntos onde poderá se especificar o tamanho do conjunto.
 
 - **Políticas de substituição:**
   - FIFO;
