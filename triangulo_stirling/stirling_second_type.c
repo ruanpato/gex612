@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int counter;
+int cnt=0, counter=0;
 
 //                                    <Functions prototype>                                   //
 
@@ -78,11 +78,16 @@ void clear(){
 // Returns: int of calculation of Stirling triangle of second type                            //
 // Description: This function calculate in a recursive form stirling triangle of second type. //
 int ST_2(int n, int k){
+    //printf("%d) - n=%d, k=%d. cnt=%d\n", counter, n, k, cnt);
+    counter++;
+    if(n==k)
+        return 1;
     if(k==0)
         return 0;
     if(n > 1)
         return k * ST_2(n-1, k) + ST_2(n-1, k-1);
     if(k > 1)
         return 0;
+    cnt++;
     return 1;
 }
