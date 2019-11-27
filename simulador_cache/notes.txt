@@ -1,0 +1,11 @@
+qtdBlocosMemPrincipal%qtdBlocosMemCache = posCache
+ex: qtdBlocosMemCache == 8 pos need three bits to represent address, so need look last three bits of qtdBlocosMemPrincipal address
+
+tagBit(the remaining bits to find address in main memory):
+Ex: cache have 8 blocks, so get last three bits of memory main address to know where goes in cache,
+ if main memory have 1024 blocks (10 bits to represent address) the tagBit will be the remaining 7 bits:
+ mainMemoryAddress: 0111011101
+ inCacheAddress: 101
+ tagBit: 0111011
+
+validBit(if have something in this position in cache)

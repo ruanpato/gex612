@@ -1,4 +1,3 @@
 class Cell:
-    def __init__(self, address, value):
-        self.address = address
-        self.value = data(value)        # Ex: 00000000 || 0xf || 19
+    def __init__(self, cellBits):
+        self._bits = "0"*cellBits # Ex: 00000000

@@ -58,11 +58,11 @@ Na MC deve-se mostrar o conteúdo da linha, o número da linha, o bit de validad
 - **Apresentar as estatísticas:** esta opção apresenta para o usuário:
   - a quantidade de acessos realizadas;
   - a quantidade de leituras realizadas;
+    - a quantidade de acertos de leitura;
+    - a quantidade de erros de leitura;
   - a quantidade de escritas realizadas;
-  - a quantidade de acertos de leitura;
-  - a quantidade de acertos de escrita;
-  - a quantidade de erros de leitura;
-  - a quantidade de erros de escrita.
+    - a quantidade de acertos de escrita;
+    - a quantidade de erros de escrita.
   - Para acertos e faltas deve-se mostrar o valor absoluto e o valor percentual;
 - **Encerrar o programa.**  
 
