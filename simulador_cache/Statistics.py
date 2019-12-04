@@ -1,15 +1,9 @@
 class Statistics:
     def __init__(self):
-        # ACCESS
-        self._accessAmount = 0
-        self._accessHits = 0
-        self._accessFaults = 0
         # READ
-        self._readAmount = 0
         self._readHits = 0
         self._readFaults = 0
         # WRITE
-        self._writeAmount = 0
         self._writeHits = 0
         self._writeFaults = 0
         # CeilDigits
