@@ -1,4 +1,5 @@
 import Cell
+import random
 # [2:] to cut 0b and zfill to padronize bits size
 class MainMemory:
     def __init__(self, blockSize, cellAmount, cellBits):
@@ -46,24 +47,40 @@ class MainMemory:
             print(block[_])
 
     # Function: getBlock
-    # Arguments: self(object), label(string[bin])
+    # Arguments: self(object), address(string[bin])
     # Return: block[Cell(),...]
-    # Description: Using the label read a block from Main Memory, and return the block
-    def getBlock(self, label):
-        initialBlock = label*self._blockSize
+    # Description: Using the address read a block from Main Memory, and return the block
+    def getBlock(self, address):
+        initialCell = int(address, 2)-int(address, 2)%self._blockSize
         block = []
 
         for _ in range(self._blockSize):
-            block.append(self._cells[initialBlock + _])
-
+            block.append(self._cells[initialCell + _ ])
+        #print("Initial cell", initialCell, " - Address", int(address, 2))
         return block
 
     # Function: writeBlock
     # Arguments: self(object), newBlock[Cell(), ...], label(string[bin])
     # Return: N/A
     # Description: Write a newBlock in a position based on label on MainMemory
-    def writeBlock(self, newBlock, label):
-        block = self.getBlock(label)
+    def writeBlock(self, newBlock, address):
+        block = self.getBlock(address)
 
         for _ in range(self._blockSize):
             block[_]._bits = newBlock[_]._bits
+
+    # Function: randomInsertInAllCells
+    # Arguments: self(object)
+    # Return: N/A
+    # Description: Write a random value in all cells in main memory
+    def randomInsertInAllCells(self):
+        for _ in range(len(self._cells)):
+            self._cells[_]._bits = bin(random.randrange(0, 255))[2:].zfill(8)
+
+    # Function: putZeroInsertInAllCells
+    # Arguments: self(object)
+    # Return: N/A
+    # Description: Write a random value in all cells in main memory
+    def putZeroInsertInAllCells(self):
+        for _ in range(len(self._cells)):
+            self._cells[_]._bits = "00000000"
