@@ -1,10 +1,10 @@
-# Simulador Cache :computer: #
+# Simulador Cache [:link:](https://github.com/ruanpato/gex612/tree/master/simulador_cache) #
 
 Este trabalho é um dos "grandes" trabalhos que compõem as Notas Parciais (NP) da matéria Organização de Computadores cursada no segundo semestre de 2019 referente a graduação em Ciência da computação.
 
 ## Sumário ##
 
-- [Simulador Cache :computer:](#simulador-cache-computer)
+- [Simulador Cache :link:](#simulador-cache-link)
   - [Sumário](#sum%c3%a1rio)
   - [1. Grupo](#1-grupo)
   - [2. Datas](#2-datas)
@@ -18,11 +18,12 @@ Este trabalho é um dos "grandes" trabalhos que compõem as Notas Parciais (NP) 
 
 ## 1. Grupo ##
 
-- **[Ruan Pato](https://github.com/ruanpato)** - Descrição em README.md e desenvolvimento do trabalho.  
+- **[Ruan Pato](https://github.com/ruanpato)** - Descrição em README.md e desenvolvimento do trabalho.
+- [Rafa Arruda](https://github.com/mazarafa) - Desenvolvimento do trabalho.
 
 ## 2. Datas ##
 
-**Data de entrega:** 09/12/2019 23:55 (UTC-3)  
+**Data de entrega:** 09/12/2019 23:55 (UTC-3)
 
 ## 3. Instruções de Entrega ##
 
@@ -37,14 +38,14 @@ Entregar via [moodle uffs](https://moodle-academico.uffs.edu.br) <sup>[*](#moodl
 - Tamanho do bloco da MP: 4 células;
 - Número de linhas da Memória Cache (MC): 8;
 - Tamanho da célula de memória: 8 bits;
-- Número de linhas do conjunto: 2 ou 4 linhas (definida pelo número entre parênteses ao lado da política de cada grupo);  
+- Número de linhas do conjunto: 2 ou 4 linhas (definida pelo número entre parênteses ao lado da política de cada grupo);
 
-Cada dupla deve implementar a política de mapeamento, substituição e escrita conforme designado na folha a seguir.  
-Na interface do programa deve ser apresentado todo o conteúdo da memória principal, da memória cache.  
-Na MP deve-se mostrar o endereço de cada célula e o número do bloco da mesma. 
-Na MC deve-se mostrar o conteúdo da linha, o número da linha, o bit de validade, o rótulo, os bits da política de substituição, o bit de escrita.  
+Cada dupla deve implementar a política de mapeamento, substituição e escrita conforme designado na folha a seguir.
+Na interface do programa deve ser apresentado todo o conteúdo da memória principal, da memória cache.
+Na MP deve-se mostrar o endereço de cada célula e o número do bloco da mesma.
+Na MC deve-se mostrar o conteúdo da linha, o número da linha, o bit de validade, o rótulo, os bits da política de substituição, o bit de escrita.
 
-**O programa deve apresentar um menu que dê acesso às seguintes operações:**  
+**O programa deve apresentar um menu que dê acesso às seguintes operações:**
 
 - **Ler um endereço de memória:**
   - o usuário informa o endereço que deseja ler na MP.
@@ -65,11 +66,11 @@ Na MC deve-se mostrar o conteúdo da linha, o número da linha, o bit de validad
     - a quantidade de acertos de escrita;
     - a quantidade de erros de escrita.
   - Para acertos e faltas deve-se mostrar o valor absoluto e o valor percentual;
-- **Encerrar o programa.**  
+- **Encerrar o programa.**
 
-**OBS1:** Os valores e endereços devem ser apresentados em hexadecimal ou binário.  
-**OBS2:** Os contadores da política de substituição possuem 4 bits (valor máximo 15).  
-**OBS3.** Inicializar a MP com valores randômicos.  
+**OBS1:** Os valores e endereços devem ser apresentados em hexadecimal ou binário.
+**OBS2:** Os contadores da política de substituição possuem 4 bits (valor máximo 15).
+**OBS3.** Inicializar a MP com valores randômicos.
 
 ## 5. Políticas ##
 
