@@ -1,4 +1,4 @@
-# Programação assembly RISC-V: Triângulo de Stirling :triangular_ruler: #
+# Programação assembly RISC-V: Triângulo de Stirling [:triangular_ruler:](https://github.com/ruanpato/gex612/tree/master/triangulo_stirling) #
 
 Este trabalho é um dos "grandes" trabalhos que compõem as Notas Parciais (NP) da matéria Organização de Computadores cursada no segundo semestre de 2019 referente a graduação em Ciência da computação.
 
@@ -13,15 +13,15 @@ Este trabalho é um dos "grandes" trabalhos que compõem as Notas Parciais (NP) 
   - [5. Descrição](#5-descri%c3%a7%c3%a3o)
   - [6. Ferramentas utilizadas](#6-ferramentas-utilizadas)
   - [7. Autores](#7-autores)
-  
+
 ## 1. Grupo: 2 Alunos (não pode repetir dupla anterior) ##
 
-- **[Ruan Natan Guerra Pato](https://github.com/ruanpato)** - Desenvolvimento do trabalho.  
-- **[Rafa Arruda](https://github.com/mazarafa)** - Desenvolvimento do trabalho.
+- **[Ruan Natan Guerra Pato](https://github.com/ruanpato)** - Desenvolvimento do trabalho.
+- [Rafa Arruda](https://github.com/mazarafa) - Desenvolvimento do trabalho.
 
 ## 2. Datas ##
 
-**Data de entrega:** 30/10/2019 23:55 (UTC-3)  
+**Data de entrega:** 30/10/2019 23:55 (UTC-3)
 **Data de apresentação:** até 08/11/2019
 
 ## 3. Instruções de entrega ##
@@ -31,7 +31,7 @@ Através de Projeto no Github (preencher dados no link acima). Convidar o profes
 ## 4. Critérios da nota ##
 
 1) Funcional com recursividade.
-    a) 32 bits: **40%**  
+    a) 32 bits: **40%**
     b) 64 bits: **60%**
 2) Modularidade, clareza e identação do código: **10%**
 3) Comentários do código: **5%**
@@ -39,14 +39,14 @@ Através de Projeto no Github (preencher dados no link acima). Convidar o profes
 
 ## 5. Descrição ##
 
-Desenvolver uma função recursiva utilizando o Assembly da arquitetura RISC-V (extensões RV32I, RVM) que implementa o cálculo do triângulo de números de Stirling de segundo tipo (Triangle of Stirling numbers of the second kind). A implementação deve suportar valores sem sinal de 64 bits.  
-    A função recebe dois valores, tal que:  
-        ST_2(n, k) = k*ST_2(n-1, k)+ST_2(n-1, k-1); n > 1  
-        ST_2(1, k) = 0; k > 1  
-        ST_2(1, 1) = 1  
-    Onde:   n >= 1  
-            1 <= k <= n  
-Além da função recursiva descrita acima, o programa deve solicitar ao usuário o valor de “k” e chamar a função ST_2(n, k) imprimindo no console todos os valores calculados entre “k” e 1.  
+Desenvolver uma função recursiva utilizando o Assembly da arquitetura RISC-V (extensões RV32I, RVM) que implementa o cálculo do triângulo de números de Stirling de segundo tipo (Triangle of Stirling numbers of the second kind). A implementação deve suportar valores sem sinal de 64 bits.
+    A função recebe dois valores, tal que:
+        ST_2(n, k) = k*ST_2(n-1, k)+ST_2(n-1, k-1); n > 1
+        ST_2(1, k) = 0; k > 1
+        ST_2(1, 1) = 1
+    Onde:   n >= 1
+            1 <= k <= n
+Além da função recursiva descrita acima, o programa deve solicitar ao usuário o valor de “k” e chamar a função ST_2(n, k) imprimindo no console todos os valores calculados entre “k” e 1.
     A tabela abaixo ilustra os valores esperados para diferentes valores de n e k:
     ![Table](images/table.png)
 

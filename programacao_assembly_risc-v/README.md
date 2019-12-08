@@ -1,10 +1,10 @@
-# Simulador Cache [:link:](https://github.com/ruanpato/gex612/tree/master/simulador_cache) #
+# Programação assembly Risc-V [:link:](https://github.com/ruanpato/gex612/tree/master/programacao_assembly_risc-v) #
 
 Este trabalho é um dos trabalhos menores que compõem as Notas Parciais (NP) da matéria Organização de Computadores cursada no segundo semestre de 2019 referente a graduação em Ciência da computação.
 
 ## Sumário ##
 
-- [Simulador Cache :link:](#simulador-cache-link)
+- [Programação assembly Risc-V :link:](#programa%c3%a7%c3%a3o-assembly-risc-v-link)
   - [Sumário](#sum%c3%a1rio)
   - [1. Grupo](#1-grupo)
   - [2. Descrição](#2-descri%c3%a7%c3%a3o)
