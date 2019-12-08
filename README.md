@@ -4,8 +4,8 @@ Repositório criado para armazenar meus exercícios e trabalho referentes ao com
 
 ## Trabalhos ##
 
-- [Triangulo de stirling fatorial](https://github.com/ruanpato/gex612/tree/master/triangulo_stirling)
-- [Simulador Cache](https://github.com/ruanpato/gex612/tree/master/simulador_cache)
+- [Triangulo de stirling fatorial :triangular_ruler:](https://github.com/ruanpato/gex612/tree/master/triangulo_stirling)
+- [Simulador Cache :computer:](https://github.com/ruanpato/gex612/tree/master/simulador_cache)
 
 ## Exercícios ##
 

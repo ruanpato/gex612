@@ -1,10 +1,10 @@
-# Programação assembly RISC-V: Triângulo de Stirling #
+# Programação assembly RISC-V: Triângulo de Stirling :triangular_ruler: #
 
 Este trabalho é um dos "grandes" trabalhos que compõem as Notas Parciais (NP) da matéria Organização de Computadores cursada no segundo semestre de 2019 referente a graduação em Ciência da computação.
 
 ## Sumário ##
 
-- [Programação assembly RISC-V: Triângulo de Stirling](#programa%c3%a7%c3%a3o-assembly-risc-v-tri%c3%a2ngulo-de-stirling)
+- [Programação assembly RISC-V: Triângulo de Stirling :triangular_ruler:](#programa%c3%a7%c3%a3o-assembly-risc-v-tri%c3%a2ngulo-de-stirling-triangularruler)
   - [Sumário](#sum%c3%a1rio)
   - [1. Grupo: 2 Alunos (não pode repetir dupla anterior)](#1-grupo-2-alunos-n%c3%a3o-pode-repetir-dupla-anterior)
   - [2. Datas](#2-datas)

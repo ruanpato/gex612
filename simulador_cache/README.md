@@ -1,10 +1,10 @@
-# Simulador Cache #
+# Simulador Cache :computer: #
 
 Este trabalho é um dos "grandes" trabalhos que compõem as Notas Parciais (NP) da matéria Organização de Computadores cursada no segundo semestre de 2019 referente a graduação em Ciência da computação.
 
 ## Sumário ##
 
-- [Simulador Cache](#simulador-cache)
+- [Simulador Cache :computer:](#simulador-cache-computer)
   - [Sumário](#sum%c3%a1rio)
   - [1. Grupo](#1-grupo)
   - [2. Datas](#2-datas)
@@ -13,7 +13,8 @@ Este trabalho é um dos "grandes" trabalhos que compõem as Notas Parciais (NP) 
   - [5. Políticas](#5-pol%c3%adticas)
   - [6. Ferramentas utilizadas](#6-ferramentas-utilizadas)
   - [7. Professor](#7-professor)
-  - [8. Informações](#8-informa%c3%a7%c3%b5es)
+  - [8. Como usar](#8-como-usar)
+    - [Testes automatizados](#testes-automatizados)
 
 ## 1. Grupo ##
 
@@ -85,20 +86,30 @@ Mapeamento Associativo por Conjuntos (4)
 
 - [Me. Luciano Lores Caimi](https://github.com/lcaimi) - *descrição do trabalho em [pdf](https://github.com/ruanpato/gex612/tree/master/simulador_cache/Trabalho_Mapeamento_MP-Cache.pdf).*
 
-## 8. Informações ##
+## 8. Como usar ##
 
-Este trabalho como na descrição acima não se fazia necessário uma implementação "generalista", porém puramente com o intuito de aprendizagem terá implementado extras como:
+Em ambiente linux via terminal estando no diretório do arquivo fonte para compilar, executar e testar manualmente basta rodar o seguinte comando:
 
-- **Mapeamento:**
-  - Direto;
-  - Associativo por conjuntos.  
-**Obs:** Associativo por conjuntos onde poderá se especificar o tamanho do conjunto.
+```bash
+python3 main.py
+```
 
-- **Políticas de substituição:**
-  - FIFO;
-  - LFU;
-  - LRU;
+### Testes automatizados ###
 
-- **Políticas de escrita:**
-  - No retorno (Write-back);
-  - Em ambas (Write-trhough).
+Os testes automatizados visam objetivam trazer casos que mostrem parte do comportamento da cache de acordo com a [Políticas](#5-pol%c3%adticas) especificadas.
+
+**Caso de Teste 0:**
+
+Neste caso será feita a escrita do valor 11111111₁₀ (255₂) na primeira "célula da memória principal", após isso será feita a leitura de 4 diferentes blocos da memória principal que têm como destino o mesmo conjunto que o valor que foi escrito inicialmente. Testando assim o Write-Back no caso de leitura.
+
+```bash
+python3 main.py < in0
+```
+
+**Caso de Teste 1:**
+
+Neste caso será feita a escrita do valor 11111110₁₀ (254₂) na primeira "célula da memória principal", após isso será feita a leitura de 3 diferentes blocos da memória principal e a escrita em uma célula pertecente à um bloco difente destes outros que têm como destino o mesmo conjunto que o valor que foi escrito inicialmente. Testando assim o Write-Back no caso de escrita em uma nova célula.
+
+```bash
+python3 main.py < in1
+```
