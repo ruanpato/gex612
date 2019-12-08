@@ -1,3 +1,4 @@
+import Cell
 import Line
 import math
 
@@ -86,21 +87,27 @@ class CacheMemory:
         if (self._lines[linePosition+int(setIndex, 2)+linePosition]._validBit == "0") or (self._lines[linePosition+int(setIndex, 2)+linePosition]._writeBit == "0"): # If have a blank space in set or don't need writeback
             self._lines[linePosition+int(setIndex, 2)+linePosition]._label = label # put the label in line cache
             self._lines[linePosition+int(setIndex, 2)+linePosition]._validBit = "1" # Set the validBit to 1
-            self._lines[linePosition+int(setIndex, 2)+linePosition]._cells = block # Put the block on the line
+            for _ in range(len(block)):
+                self._lines[linePosition+int(setIndex, 2)+linePosition]._cells[_]._bits = block[_]._bits # Put the block on the line
             # Increment LRU
             if linePosition == 3:
                 self._lru[int(setIndex)] = "00"
             else:
                 self._lru[int(setIndex)] = bin(linePosition+1)[2:].zfill(2) # Increment LRU
-            print("LRU After", self._lru[int(setIndex)])
             return None, None
         # WriteBack
         elif self._lines[linePosition+int(setIndex, 2)+linePosition]._writeBit == "1": # If need write the value on mainMemory before put the new block on cache
-            mainMemoryBlock = self._lines[linePosition+int(setIndex, 2)+linePosition]._cells # Save the block "Dirty" to return and put on main memory
-            mainMemoryInitialAddress = (self._lines[linePosition+int(setIndex, 2)+linePosition]._label+setIndex+"00") # Return the address of initial cell of the block
+            mainMemoryBlock = []
+
+            for _ in range(len(self._lines[linePosition+int(setIndex, 2)+linePosition]._cells)):
+                mainMemoryBlock.append(self._lines[linePosition+int(setIndex, 2)+linePosition]._cells[_]._bits) # Save the block "Dirty" to return and put on main memory
+            mainMemoryInitialAddress = ((self._lines[linePosition+int(setIndex, 2)+linePosition]._label)+setIndex+"00") # Return the address of initial cell of the block
             self._lines[linePosition+int(setIndex, 2)+linePosition]._label = label # put the new label in line cache
             self._lines[linePosition+int(setIndex, 2)+linePosition]._writeBit = "0" # Set the validBit to 1
-            self._lines[linePosition+int(setIndex, 2)+linePosition]._cells = block # Put the block on the line
+
+            for _ in range(len(block)):
+                self._lines[linePosition+int(setIndex, 2)+linePosition]._cells[_]._bits = block[_]._bits # Put the block on the line
+
             # Increment LRU
             if linePosition == 3:
                 self._lru[int(setIndex)] = "00"
@@ -121,6 +128,20 @@ class CacheMemory:
                 if self._lines[_+_+1]._label == label:
                     return 1 # Means a hit
         return 0 # Means Fault
+
+    def getLineInCache(self, address):
+        setIndex = address[-3]
+        label = address[:-3]
+        #linePosition = self._lru[int(setIndex)]
+        if setIndex == "0":
+            for _ in range(8//2):
+                if self._lines[_+_]._label == label: # if value already is in cache
+                    return _+_
+        elif setIndex == "1":
+            for _ in range(8//2):
+                if self._lines[_+_+1]._label == label:
+                    return _+_+1
+        return -1 # Block Isn't in cache
 
     def writeCellInCache(self, value, address):
         setIndex = address[-3]

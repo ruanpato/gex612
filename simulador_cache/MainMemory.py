@@ -24,7 +24,6 @@ class MainMemory:
     #       |   11111   |   1111111   |   00000000   |
     #       |----------------------------------------|
     def printAllCells(self):
-        print(self._blockBits, self._addressBits, self._cellBits)
         padding = 5 if self._cellBits%2!=0 else 6 # Padding based if cellBits is or isn't odd
         helper = "|{:-^"+str(self._blockBits+self._addressBits+self._cellBits+padding*3+2)+"s}|\n|{: ^"+str(self._blockBits+padding)+"s}|{: ^"+str(self._addressBits+padding)+"s}|{: ^"+str(self._cellBits+padding)+"s}|" # Receive format to print string
         print(helper.format("MAIN MEMORY", "Block", "Address", "Value")) # Print Header
@@ -59,15 +58,16 @@ class MainMemory:
         #print("Initial cell", initialCell, " - Address", int(address, 2))
         return block
 
-    # Function: writeBlock
-    # Arguments: self(object), newBlock[Cell(), ...], label(string[bin])
+    # Function: writeBack
+    # Arguments: self(object), oldBlock[Cell(), ...], label(string[bin])
     # Return: N/A
-    # Description: Write a newBlock in a position based on label on MainMemory
-    def writeBlock(self, newBlock, address):
-        block = self.getBlock(address)
-
+    # Description: Write a oldBlock in a position based on label on MainMemory
+    def writeBack(self, oldBlock, address):
+        print("WRITE BACK")
+        initialCell = int(int(address, 2)-int(address, 2)%self._blockSize) # Address of the initial cell of the block
+        # Fill The block in main memory with the values who was previously on cache
         for _ in range(self._blockSize):
-            block[_]._bits = newBlock[_]._bits
+            self._cells[initialCell+_]._bits = oldBlock[_]
 
     # Function: randomInsertInAllCells
     # Arguments: self(object)

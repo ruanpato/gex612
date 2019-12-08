@@ -26,62 +26,54 @@ def readMemoryAddress():
         if int(memoryAddress, 2) >= 0  and int(memoryAddress, 2) < cellAmountMM:
             result = cacheMemory.blockIsInCache(memoryAddress.zfill(7))
             if result == 1:
-                print("Read Hit")
+                print("READ HIT")
                 statistics._readHits += 1
             elif result == 0:
-                print("Read Fault")
+                print("READ FAULT")
                 statistics._readFaults += 1
                 block = mainMemory.getBlock(memoryAddress) # Pega o bloco da memória principal
-                print(block[0]._bits, block[1]._bits, block[2]._bits, block[3]._bits) # Retirar
 
                 oldBlock = cacheMemory.putBlock(memoryAddress.zfill(7), block) # Coloca o bloco na cache
                 # Write back in action
-                if oldBlock[0] != None and oldBlock[1] != None:
-                    mainMemory._cells[int(oldBlock[0], 2)+0]._bits = oldBlock[1][0]._bits
-                    mainMemory._cells[int(oldBlock[0], 2)+1]._bits = oldBlock[1][1]._bits
-                    mainMemory._cells[int(oldBlock[0], 2)+2]._bits = oldBlock[1][2]._bits
-                    mainMemory._cells[int(oldBlock[0], 2)+3]._bits = oldBlock[1][3]._bits
+                if oldBlock[0] != None and oldBlock[1] != None: # oldBlock[0] == Address, # oldBlock[1] == "Block"
+                    mainMemory.writeBack(oldBlock[1], oldBlock[0])
+        line = cacheMemory.getLineInCache(memoryAddress.zfill(7))
+        print("|{: ^30s}|".format("Block on Main Memory: "+str(int(memoryAddress, 2)//blockSize)))
+        print("|{: ^30s}|".format("Cache Line destination: "+str(line)) )
+        print("|{: ^30s}|".format("Set Destination: "+memoryAddress.zfill(7)[-3]))
     except:
-        print("Error")
+        print("ERROR IN readMemoryAddress")
 
 def writeContentInMemory():
     memoryAddress = input("Type a binary value in range [" + ("0"*(len(bin(cellAmountMM)[2:])-1)) + ", " + ("1"*(len(bin(cellAmountMM)[2:])-1)) +"]: ")
     value = input( ("Type a binary value in range [" + bin(0)[2:].zfill(cellBits) +", " + ("1"*cellBits) +"]: ") )
     try:
         if int(memoryAddress, 2) >= 0  and int(memoryAddress, 2) < cellAmountMM and int(value, 2) >= 0 and int(value, 2) <= 255:
-            result = cacheMemory.blockIsInCache(memoryAddress.zfill(7))
-            if result == 1:
-                print("Write Hit")
+            result = cacheMemory.getLineInCache(memoryAddress.zfill(7)) # Return -1 if isn't in cache
+            if result != -1: # Is in cache
+                print("WRITE HIT")
                 statistics._writeHits += 1
-                # Change value in cache
-
-            elif result == 0:
-                print("Write Fault")
+                # Change value in cache, don't change in mainMemory
+            elif result == -1: # Isn't in cache, so is needed get in main memory, put in cache and change in cache
+                print("WRITE FAULT")
                 statistics._writeFaults += 1
-                block = mainMemory.getBlock(memoryAddress) # Pega o bloco da memória principal
-                print(block[0]._bits, block[1]._bits, block[2]._bits, block[3]._bits) # Retirar
+                block = mainMemory.getBlock(memoryAddress) # Get the block of Specified cell by address, and return it
 
-                oldBlock = cacheMemory.putBlock(memoryAddress.zfill(7), block) # Coloca o bloco na cache
+                oldBlock = cacheMemory.putBlock(memoryAddress.zfill(7), block) # Put the new Block in cache, and return Address of the previously block, and a list with the value of his cells (if had, else return none, none)
 
                 # Write back in action
                 if oldBlock[0] != None and oldBlock[1] != None:
-                    mainMemory._cells[int(oldBlock[0], 2)+0]._bits = oldBlock[1][0]._bits
-                    mainMemory._cells[int(oldBlock[0], 2)+1]._bits = oldBlock[1][1]._bits
-                    mainMemory._cells[int(oldBlock[0], 2)+2]._bits = oldBlock[1][2]._bits
-                    mainMemory._cells[int(oldBlock[0], 2)+3]._bits = oldBlock[1][3]._bits
+                    mainMemory.writeBack(oldBlock[1], oldBlock[0])
+        blockOffset = int(memoryAddress[-2:], 2)
+        line = cacheMemory.getLineInCache(memoryAddress.zfill(7)) # Return -1 if isn't in cache
+        print("|{: ^30s}|".format("Block on Main Memory: "+str(int(memoryAddress, 2)//blockSize)))
+        print("|{: ^30s}|".format("Cache Line destination: "+str(line)) )
+        print("|{: ^30s}|".format("Set Destination: "+memoryAddress.zfill(7)[-3]))
+        cacheMemory._lines[line]._writeBit = "1" # Sets the "Dirty bit" to 1 (Means when this block will be replaced need refresh in main memory [Write Back])
+        cacheMemory._lines[line]._cells[blockOffset]._bits = value.zfill(8) # Value Writed
 
     except:
-        pass
-    #if block == None:
-        #bloco = memoryCache.readBlockFromMemory(memoryAddress, mainMemory)
-        #statistics._accessFaults += 1 # Increment access faults
-       # statistics._writeFaults += 1 # Increment write faults
-   # else:
-        #statistics._accessHits += 1 # Increment access Hits
-      #  statistics._writeHits += 1 # Increment Write Hits
-
-    # Write data on cache
-    #cacheMemory.writeData(memoryAddress, value)
+        print("ERROR IN writeContentInMemory")
 
 # Menu
 while(True):
@@ -89,7 +81,7 @@ while(True):
     if option ==  1: # Read a memory Address
         readMemoryAddress()
     elif option == 2: # Write on memory
-        pass
+        writeContentInMemory()
     elif option == 3: # Show statistics
         statistics.showStatistics()
     elif option == 4: # Show all Main Memory
