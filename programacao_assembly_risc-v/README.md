@@ -8,8 +8,8 @@ Este trabalho é um dos trabalhos menores que compõem as Notas Parciais (NP) da
   - [Sumário](#sum%c3%a1rio)
   - [1. Grupo](#1-grupo)
   - [2. Descrição](#2-descri%c3%a7%c3%a3o)
-  - [6. Ferramentas utilizadas](#6-ferramentas-utilizadas)
-  - [7. Professor](#7-professor)
+  - [3. Ferramentas utilizadas](#3-ferramentas-utilizadas)
+  - [4. Professor](#4-professor)
 
 ## 1. Grupo ##
 
@@ -47,10 +47,10 @@ Menor:
 
 [3.](https://github.com/ruanpato/gex612/tree/master/programacao_assembly_risc-v/multiplica.asm) Fazer uma função chamada "Multiplica" que recebe dois números inteiros positivos e retorna o valor da multiplicação entre eles. [exercicio_1.asm](https://github.com/ruanpato/gex612/tree/master/programacao_assembly_risc-v/exercicio_1.asm)
 
-## 6. Ferramentas utilizadas ##
+## 3. Ferramentas utilizadas ##
 
 - [RARS](https://github.com/TheThirdOne/rars) - RISC-V Assembler and Runtime Simulator
 
-## 7. Professor ##
+## 4. Professor ##
 
 - [Me. Luciano Lores Caimi](https://github.com/lcaimi) - *descrição do trabalho em [pdf](https://github.com/ruanpato/gex612/tree/master/simulador_cache/Trabalho_Mapeamento_MP-Cache.pdf).*
