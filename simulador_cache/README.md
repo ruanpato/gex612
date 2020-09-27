@@ -1,16 +1,16 @@
-# Simulador Cache [:link:](https://github.com/ruanpato/gex612/tree/master/simulador_cache) #
+# Simulador Cache [:link:](https://github.com/ruanpato/risc-v/tree/master/simulador_cache) #
 
 Este trabalho é um dos "grandes" trabalhos que compõem as Notas Parciais (NP) da matéria Organização de Computadores cursada no segundo semestre de 2019 referente a graduação em Ciência da computação.
 
 ## Sumário ##
 
 - [Simulador Cache :link:](#simulador-cache-link)
-  - [Sumário](#sum%c3%a1rio)
+  - [Sumário](#sumário)
   - [1. Grupo](#1-grupo)
   - [2. Datas](#2-datas)
-  - [3. Instruções de Entrega](#3-instru%c3%a7%c3%b5es-de-entrega)
-  - [4. Instruções para implementação](#4-instru%c3%a7%c3%b5es-para-implementa%c3%a7%c3%a3o)
-  - [5. Políticas](#5-pol%c3%adticas)
+  - [3. Instruções de Entrega](#3-instruções-de-entrega)
+  - [4. Instruções para implementação](#4-instruções-para-implementação)
+  - [5. Políticas](#5-políticas)
   - [6. Ferramentas utilizadas](#6-ferramentas-utilizadas)
   - [7. Professor](#7-professor)
   - [8. Como usar](#8-como-usar)
@@ -19,7 +19,7 @@ Este trabalho é um dos "grandes" trabalhos que compõem as Notas Parciais (NP) 
 ## 1. Grupo ##
 
 - **[Ruan Pato](https://github.com/ruanpato)** - Descrição em README.md e desenvolvimento do trabalho.
-- [Rafa Arruda](https://github.com/mazarafa) - Desenvolvimento do trabalho.
+- [Rafa Arruda](https://github.com/mazarafa) - Participação no trabalho.
 
 ## 2. Datas ##
 
@@ -85,7 +85,7 @@ Mapeamento Associativo por Conjuntos (4)
 
 ## 7. Professor ##
 
-- [Me. Luciano Lores Caimi](https://github.com/lcaimi) - *descrição do trabalho em [pdf](https://github.com/ruanpato/gex612/tree/master/simulador_cache/Trabalho_Mapeamento_MP-Cache.pdf).*
+- [Me. Luciano Lores Caimi](https://github.com/lcaimi) - *descrição do trabalho em [pdf](https://github.com/ruanpato/risc-v/tree/master/simulador_cache/Trabalho_Mapeamento_MP-Cache.pdf).*
 
 ## 8. Como usar ##
 

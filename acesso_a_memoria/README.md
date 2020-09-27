@@ -1,6 +1,6 @@
 # Programação assembly RISC-V: Acesso a memória #
 
-[código](https://github.com/ruanpato/gex612/tree/master/acesso_a_memoria/acesso_a_memoria.s).
+[código](https://github.com/ruanpato/risc-v/tree/master/acesso_a_memoria/acesso_a_memoria.s).
 
 1) Implemente uma função chamada "menor_vetor" que recebe o endereço inicial de um vetor e seu tamanho (nos registradores  a0 e a1 respectivamente) e retorna  o índice do menor valor e qual é este valor (nos registradores  a0 e a1 respectivamente).
 

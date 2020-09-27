@@ -1,26 +1,26 @@
-# GEX612 Organização de Computadores [:link:](https://github.com/ruanpato/gex612) #
+# RISC-V [:link:](https://github.com/ruanpato/risc-v) #
 
 Repositório criado para armazenar meus exercícios e trabalho referentes ao componente curricular obrigatório Organização de computadores cursado no de Bacharel em Ciência da computação na Universidade Federal da Fronteira Sul, campus Chapecó/SC.
 
 ## Sumário ##
 
-- [GEX612 Organização de Computadores :link:](#gex612-organiza%c3%a7%c3%a3o-de-computadores-link)
-  - [Sumário](#sum%c3%a1rio)
+- [RISC-V :link:](#risc-v-link)
+  - [Sumário](#sumário)
   - [Trabalhos](#trabalhos)
-  - [Exercícios](#exerc%c3%adcios)
+  - [Exercícios](#exercícios)
   - [Ferramentas utilizadas](#ferramentas-utilizadas)
   - [Autores](#autores)
 
 ## Trabalhos ##
 
-- [Triangulo de stirling fatorial :triangular_ruler:](https://github.com/ruanpato/gex612/tree/master/triangulo_stirling)
-- [Simulador Cache :computer:](https://github.com/ruanpato/gex612/tree/master/simulador_cache)
+- [Triangulo de stirling fatorial :triangular_ruler:](https://github.com/ruanpato/risc-v/tree/master/triangulo_stirling)
+- [Simulador Cache :computer:](https://github.com/ruanpato/risc-v/tree/master/simulador_cache)
 
 ## Exercícios ##
 
-- [Programação Assembly RISC-V](https://github.com/ruanpato/gex612/tree/master/programacao_assembly_risc-v)
-- [Acesso a memória](https://github.com/ruanpato/gex612/tree/master/acesso_a_memoria)
-- [Fatorial Recursivo](https://github.com/ruanpato/gex612/tree/master/fatorial_recursivo)
+- [Programação Assembly RISC-V](https://github.com/ruanpato/risc-v/tree/master/programacao_assembly_risc-v)
+- [Acesso a memória](https://github.com/ruanpato/risc-v/tree/master/acesso_a_memoria)
+- [Fatorial Recursivo](https://github.com/ruanpato/risc-v/tree/master/fatorial_recursivo)
 
 ## Ferramentas utilizadas ##
 
@@ -29,5 +29,5 @@ Repositório criado para armazenar meus exercícios e trabalho referentes ao com
 ## Autores ##
 
 - **[Ruan Pato](https://github.com/ruanpato)** - *Criador do repositório, descrições em README.md e resoução de exercícios e trabalhos*.
-- [Rafa Arruda](https://github.com/mazarafa) - *Exercícios e trabalhos feitos*
+- [Rafa Arruda](https://github.com/mazarafa) - *Participação nos trabalhos*
 - [Me. Luciano Lores Caimi](https://github.com/lcaimi) - *Professor*
