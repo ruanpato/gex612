@@ -1,6 +1,6 @@
 # Programação assembly Risc-V [:link:](https://github.com/ruanpato/risc-v/tree/master/programacao_assembly_risc-v) #
 
-Este trabalho é um dos trabalhos menores que compõem as Notas Parciais (NP) da matéria Organização de Computadores cursada no segundo semestre de 2019 referente a graduação em Ciência da computação.
+Este trabalho é um dos trabalhos menores que compõem as Notas Parciais (NP) da matéria Organização de Computadores referente à minha graduação em Ciência da computação.
 
 ## Sumário ##
 

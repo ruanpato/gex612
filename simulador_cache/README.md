@@ -1,6 +1,6 @@
 # Simulador Cache [:link:](https://github.com/ruanpato/risc-v/tree/master/simulador_cache) #
 
-Este trabalho é um dos "grandes" trabalhos que compõem as Notas Parciais (NP) da matéria Organização de Computadores cursada no segundo semestre de 2019 referente a graduação em Ciência da computação.
+Este trabalho é um dos "grandes" trabalhos que compõem as Notas Parciais (NP) da matéria Organização de Computadores referente à minha graduação em Ciência da computação.
 
 ## Sumário ##
 
